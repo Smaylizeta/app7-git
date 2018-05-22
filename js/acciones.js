@@ -2,10 +2,10 @@
 
 $(document).ready(function(e){
     document.addEventListener("deviceready",function(){
-		$('#Izquierda').on("swipeleft",function(){
-			navigator.notification.alert("Deslizo hacia la izquierda",function(){"aplicaion 7","ok"});
-	});
-	$('#Derecha').on("swiperight",function(){
+		$('#izquierda').on("swipeleft",function(){
+			navigator.notification.alert("Desliza a la izquierda",function(){"aplicacion 7","ok"});
+	});//cerrar deslizar a la izquierda
+	$('#derecha').on("swiperight",function(){
 		navigator.notification.confirm("¿Que quieres hacer?",function(op){
 			switch(op)
 			{
